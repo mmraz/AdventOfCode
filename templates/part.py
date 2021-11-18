@@ -4,6 +4,6 @@ inputs = ''
 DEBUG = 0
 
 with open('input', 'r') as f:
-    inputs = f.readlines().rstrip()
+    inputs = f.read().splitlines()
 
 print('')

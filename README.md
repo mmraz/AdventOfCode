@@ -1,5 +1,5 @@
-# AdventOfCode2021
-Personal solutions to the 2021 Advent of Code puzzles for [Michael Mraz](https://github.com/mmraz)
+# AdventOfCode
+Personal solutions to the Advent of Code puzzles for [Michael Mraz](https://github.com/mmraz)
 
 ## Automation
 All code reads inputs from a file named `input` and prints the answer to STDOUT
@@ -7,11 +7,11 @@ All code reads inputs from a file named `input` and prints the answer to STDOUT
 Interaction with the website is done using [aoc-cli](https://github.com/scarvalhojr/aoc-cli)
 
 ```
-cd day##
-aoc read -d ##
-aoc download -d ##
-aoc submit 1 $(./part1.py) -d ## 
-aoc submit 2 $(./part2.py) -d ## 
+cd <year>/day##
+aoc read 1 -y <year> -d ##
+aoc download -y <year> -d ##
+aoc submit 1 $(./part1.py) -y <year> -d ## 
+aoc submit 2 $(./part2.py) -y <year> -d ## 
 ```
 ## Templates
 
