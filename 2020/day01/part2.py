@@ -15,5 +15,5 @@ def sums_to_2020(values):
     return sum(values) == 2020
 
 result = list(filter(sums_to_2020, expense_pairs))
-print(result)
+if(DEBUG): print(result)
 print(prod(result[0]))
