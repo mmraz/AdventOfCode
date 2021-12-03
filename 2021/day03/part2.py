@@ -17,10 +17,11 @@ def parse(data, width, least=False):
         count = 0
         for f in data:
             count += f >> i & 1
+        about_half =  len(data)//2 + len(data)%2
         if least:
-            count = count < len(data)//2 + len(data)%2
+            count = count < about_half
         else:
-            count = count >= len(data)//2 + len(data)%2
+            count = count >= about_half
         data = [x for x in data if x>>i & 1 == count]
         if DEBUG:
             print(f"data length {len(data)}")
