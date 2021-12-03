@@ -12,8 +12,10 @@ while(len(inputs) > 0):
   line = inputs.pop(0)
   if( line.startswith('f') ):
       position += int(line.rsplit(' ',1)[-1])
+      continue
   if( line.startswith('d') ):
       depth += int(line.rsplit(' ',1)[-1])
+      continue
   if( line.startswith('u') ):
       depth -= int(line.rsplit(' ',1)[-1])
 

@@ -15,8 +15,10 @@ while(len(inputs) > 0):
       val = int(line.rsplit(' ',1)[-1])
       position += val
       depth += (val * aim)
+      continue
   if( line.startswith('d') ):
       aim += int(line.rsplit(' ',1)[-1])
+      continue
   if( line.startswith('u') ):
       aim -= int(line.rsplit(' ',1)[-1])
 
