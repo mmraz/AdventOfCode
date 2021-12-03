@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-DEBUG = True
+DEBUG = False
 
 with open('input', 'r') as f:
     inputs = f.read().splitlines()
 
-entry_mid = (len(inputs)/2)
+entry_mid = (len(inputs)//2)
+if DEBUG:
+    print(f"entry_mid {entry_mid}")
 ones = [0]*len(inputs[0])
 gamma = [0]*len(inputs[0])
 epsilon = [0]*len(inputs[0])
