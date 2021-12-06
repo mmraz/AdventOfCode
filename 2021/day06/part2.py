@@ -32,4 +32,4 @@ while(day < 256):
         print(f"school {school}")
     fishes = copy.deepcopy(school)
 
-print(sum([x for x in fishes.values()]))
+print(sum(fishes.values()))
