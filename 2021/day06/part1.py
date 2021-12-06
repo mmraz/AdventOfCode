@@ -3,7 +3,7 @@
 inputs = list()
 DEBUG = False
 
-with open('input.ex', 'r') as f:
+with open('input', 'r') as f:
     inputs = f.read().splitlines()
 fish = [int(i) for i in inputs.pop().split(',')]
 if DEBUG:
@@ -15,7 +15,7 @@ def maki(age):
         return 6
     return age-1
 
-while(day < 256):
+while(day < 80):
     babies = len([z for z in fish if z == 0])
     if DEBUG:
         print(f"babies {babies}")
