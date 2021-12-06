@@ -14,7 +14,7 @@ if DEBUG:
 
 # walk through the list from the end
 # -capture the max x and y to intialize our grid
-# -delete diagonal lines
+# -delete diagonal lines that are not 45 degrees
 x = 0
 y = 0
 def hline(line):
