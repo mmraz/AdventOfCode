@@ -4,7 +4,7 @@ import re
 
 inputs = []
 results = []
-DEBUG = False
+DEBUG = True
 
 with open('input', 'r') as f:
     inputs = f.read().splitlines()
@@ -15,7 +15,10 @@ nums_re = re.compile(r'(?=(\d|%s))' % '|'.join(nums))
 
 for line in inputs:
     digits = []
-    for num in nums_re.findall(line):
+    found_nums = nums_re.findall(line)
+    if DEBUG:
+        print(found_nums)
+    for num in found_nums:
         if num in nums:
             num = str(nums.index(num) + 1)
         digits.append(num)
