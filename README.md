@@ -24,3 +24,4 @@ directory as an easy starting point for your solution.
 Advent of Code is a free online Advent calendar of small programming puzzles
 created by [Eric Wastl](http://was.tl/) and maintained by volunteers. Please
 consider [supporting their work](https://adventofcode.com/support).
+
